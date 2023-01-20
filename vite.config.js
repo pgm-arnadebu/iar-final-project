@@ -1,18 +1,14 @@
 // vite.config.js
 import { defineConfig } from 'vite'
-// vite.config.js
 import mkcert from 'vite-plugin-mkcert'
-
-
 
 // vite.config.js
 export default {
   base: './',
   // config options
   build: {
-    outDir: '../.'
+    outDir: 'docs'
   },
-  plugins: [ mkcert() ],
-  server: { https: true }
-
+  plugins : [mkcert()],
+  server: {https:true}
 }

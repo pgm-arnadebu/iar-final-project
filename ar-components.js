@@ -1,9 +1,5 @@
-/* global AFRAME  */
 
 AFRAME.registerComponent("hide-in-ar-mode", {
-	// Set this object invisible while in AR mode.
-	// TODO: could this be replaced with bind="visible: !ar-mode"
-	// with https://www.npmjs.com/package/aframe-state-component ?
 	init: function () {
 		this.el.sceneEl.addEventListener("enter-vr", () => {
 			if (this.el.sceneEl.is("ar-mode")) {

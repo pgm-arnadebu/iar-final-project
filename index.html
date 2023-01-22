@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Be APPY</title>
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 		<script src="ar-components.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
 	</head>
 	<body class="inline">
 		<a-scene webxr="optionalFeatures: hit-test, dom-overlay; overlayElement:#overlay;" physics="debug: false">
+            {# Ball #}
 			<a-sphere id="ball" dynamic-body radius="0.1" color="orange" position="0.1 2.36 -1.5"></a-sphere>
 			<a-entity id="hoop" rotation="90 0 0" position="0 2 -1.8" hide-in-ar-mode> 
 				<a-torus scale="0.6 0.6 0.6" position="0 0.173 -0.1" color="#43A367" radius="0.25" radius-tubular="0.005"></a-torus>

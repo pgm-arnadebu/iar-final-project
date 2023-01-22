@@ -1,9 +1,0 @@
-{
-    "liveServer.settings.https": {
-        "enable": true, //set it true to enable the feature.
-        "cert": "C:/Users/arnau/Documents/github-ADB/iar-final-project/server.crt", //full path of the certificate
-        "key": "C:/Users/arnau/Documents/github-ADB/iar-final-project/server.key", //full path of the private key
-        "passphrase": "1234"
-    },
-    "liveServer.settings.port": 5502,
-}
